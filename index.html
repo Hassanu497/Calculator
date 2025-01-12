@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body style="background-image: url(keybord/images.jpeg);">
+    <main style="display: flex; justify-content: center;">
+        <div>
+            <div
+                style="border-top-left-radius: 20px;border-top-right-radius: 20px; border: 1.5px solid black; display: flex; height: fit-content;border-bottom: none;">
+                <input id="inp"
+                    style=" border: none; height: 100px; width: 294px;outline: none ;border-top-left-radius: 20px;border-top-right-radius: 0;border-right: 1.5px solid black;"
+                    type="text" readonly>
+                <button onclick="del()" style="border: none;width: 98.6px;border-top-right-radius: 18px;background-color:rgb(130, 130, 130);color: white;">
+                    DEL
+                </button>
+            </div>
+            <div style="display: flex;">
+                <button onclick="btn('7')" style="height: 100px; width: 100px;">7</button>
+                <button onclick="btn('8')" style="height: 100px; width: 100px;">8</button>
+                <button onclick="btn('9')" style="height: 100px; width: 100px;">9</button>
+                <button onclick="btn('/')"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61); border: 1px solid black;">/</button>
+            </div>
+            <div style="display: flex;">
+                <button onclick="btn('4')" style="height: 100px; width: 100px;">4</button>
+                <button onclick="btn('5')" style="height: 100px; width: 100px;">5</button>
+                <button onclick="btn('6')" style="height: 100px; width: 100px;">6</button>
+                <button onclick="btn('*')"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61); border: 1px solid black;">*</button>
+            </div>
+            <div style="display: flex;">
+                <button onclick="btn('3')" style="height: 100px; width: 100px;">3</button>
+                <button onclick="btn('2')" style="height: 100px; width: 100px;">2</button>
+                <button onclick="btn('1')" style="height: 100px; width: 100px; ">1</button>
+                <button onclick="btn('-')"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61); border: 1px solid black;">-</button>
+            </div>
+            <div style="display: flex;">
+                <button onclick="btn('0')" style="height: 100px; width: 100px;">0</button>
+                <button onclick="clearinp('0')"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61);border: 1px solid black;">C</button>
+                <button onclick="btn('+')"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61); border: 1px solid black;">+</button>
+                <button onclick="result()"
+                    style="height: 100px; width: 100px;background-color:rgb(255, 187, 61); border: 1px solid black;">=</button>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <script src="keybord/app.js"></script>
+</body>
+
+</html>
